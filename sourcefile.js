@@ -16,9 +16,6 @@ let showTubeCards =[];
 let GetpickCards = [];
 <<<<<<< HEAD
 let win=0, lose=0, draw = 0;
-
-=======
->>>>>>> e349deadf45c3c09d7c1cb8af03337bcfd223280
       async function fetchQuote() {
         const rsp = await fetch(
           "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1"
@@ -71,11 +68,9 @@ let win=0, lose=0, draw = 0;
           ).innerHTML += `<img src="${card.image}" heigth="100" width="100"/>`;
            playerScore+=parseInt(deckNameVal_player);
         });
-<<<<<<< HEAD
         document.querySelector("#playerhand").innerHTML= `Player on hand: ${(playerScore > 21?(playerScore-21):playerScore)}`;//"Player on hand: "+playerScore;
-=======
+
         document.querySelector("#playerhand").innerHTML= `Player on hand: ${playerScore}`;//"Player on hand: "+playerScore;
->>>>>>> e349deadf45c3c09d7c1cb8af03337bcfd223280
 
         let cardsDrawnComputer = await run.drawCards();
         //console.log(cardsDrawnComputer.length);
@@ -209,27 +204,26 @@ document.querySelector("#holdbtn").addEventListener('click', ()=>{
        document.querySelector("#computer").innerHTML+=`<img src="${cards.image}" heigth="100" width="100">`;
     });
     
-<<<<<<< HEAD
+
     document.querySelector("#computerhand").innerHTML=`Computer on hand: ${(computerScore > 21?(computerScore-21):computerScore)}`;
-=======
+
     document.querySelector("#computerhand").innerHTML=`Computer on hand: ${computerScore}`;
->>>>>>> e349deadf45c3c09d7c1cb8af03337bcfd223280
+
     if((playerScore > 21?(playerScore-21):playerScore) > (computerScore > 21?(computerScore-21):computerScore)){
       document.querySelector(".information-board").innerHTML=`<label style="color: #eee;">You win, got <i style="color: #2db300;">${parseInt(getInputBet).toLocaleString()}</i></label>`;
       totalBet=(parseInt(totalBet)+parseInt(getInputBet));
      // totalBet+=totalcurrentBet;
        document.querySelector(".totalbethand").innerHTML=`Total Bet: ${totalBet.toLocaleString()}`;
-<<<<<<< HEAD
+
       win++;
 
     }else if(playerScore==computerScore){
          document.querySelector(".information-board").innerHTML="Draw";
          draw++;
-=======
        
     }else if(playerScore==computerScore){
          document.querySelector(".information-board").innerHTML="Draw";
->>>>>>> e349deadf45c3c09d7c1cb8af03337bcfd223280
+
     }
     else{
     //  console.log("error->"+totalBet);
@@ -237,11 +231,8 @@ document.querySelector("#holdbtn").addEventListener('click', ()=>{
       totalBet = (parseInt(totalBet)-parseInt(getInputBet));
      
        document.querySelector(".totalbethand").innerHTML=`Total Bet: ${totalBet.toLocaleString()}`;
-<<<<<<< HEAD
+
        lose++;
-=======
-       
->>>>>>> e349deadf45c3c09d7c1cb8af03337bcfd223280
     }
 
 
@@ -275,11 +266,8 @@ document.querySelector("#return").addEventListener("click",()=>{
    
     
       PlayAgain();
-<<<<<<< HEAD
       document.querySelector(".information-board").innerHTML=`Win ${win} , Lose ${lose} and Draw ${draw}`;
-=======
       document.querySelector(".information-board").innerHTML="Win or Lose";
->>>>>>> e349deadf45c3c09d7c1cb8af03337bcfd223280
       document.querySelector("#return").style.display="none";
       document.querySelector("#dealbtn").style.display="block";
       document.querySelector("#inputbet").removeAttribute("disabled");
@@ -308,11 +296,8 @@ async function PlayAgain(){
            document.querySelector("#player > img").remove();
          });
           GetpickCards.splice(0, GetpickCards.length);
-<<<<<<< HEAD
          document.querySelector("#playerhand").innerHTML=`Player on hand: ${(playerScore > 21?(playerScore-21):playerScore)}`;
-=======
          document.querySelector("#playerhand").innerHTML=`Player on hand: ${playerScore}`;
->>>>>>> e349deadf45c3c09d7c1cb8af03337bcfd223280
  
          let cardsDrawnComputer = await run.drawCards();
  
