@@ -54,12 +54,12 @@ let GetpickCards = [];
       (async function () {
         let run = await dealer();
         let cardsDrawn = await run.drawCards();
-        console.log(cardsDrawn);
+        //console.log(cardsDrawn);
         cardsDrawn.forEach((card) => {
         let deckNameVal_player = (decknameValue[card.value]===undefined?card.value:decknameValue[card.value]);
-          console.log(card.value);
-          console.log(card.suit);
-          console.log(card.image);
+          //console.log(card.value);
+          //console.log(card.suit);
+          //console.log(card.image);
 
           document.querySelector(
             "#player"
@@ -72,7 +72,7 @@ let GetpickCards = [];
         //console.log(cardsDrawnComputer.length);
 
         for(i = 0 ; i < cardsDrawnComputer.length; i++){
-            console.log(cardsDrawnComputer[i]);
+            //console.log(cardsDrawnComputer[i]);
             const cardsDawArr = cardsDrawnComputer[i];
             let deckNameVal = (decknameValue[cardsDawArr.value]===undefined?cardsDawArr.value:decknameValue[cardsDawArr.value]);
             if(i==0){
@@ -82,11 +82,11 @@ let GetpickCards = [];
                document.querySelector("#computer").innerHTML += `<img src="https://opengameart.org/sites/default/files/card%20back%20red.png" heigth="100" width="100"/>`;
             }
           //  computerScore.push(deckNameVal);
-            console.log(deckNameVal);
+            //console.log(deckNameVal);
             computerScore+=parseInt(deckNameVal);
             showTubeCards.push(cardsDrawnComputer[i]);
         }
-        console.log('computerscore:'+ (computerScore > 21?(computerScore-21):computerScore));
+       // console.log('computerscore:'+ (computerScore > 21?(computerScore-21):computerScore));
        
         // cardsDrawnComputer.forEach((card) => {
         //   console.log(card.value);
@@ -149,7 +149,7 @@ let GetpickCards = [];
           let deckNameVal_player = (decknameValue[cards.value]===undefined?cards.value:decknameValue[cards.value]);
            document.querySelector("#computer").innerHTML += `<img src="https://opengameart.org/sites/default/files/card%20back%20red.png" heigth="100" width="100"/>`;
           computerScore+=parseInt(deckNameVal_player);
-          console.log(cards.value);
+        //  console.log(cards.value);
           showTubeCards.push(cards);
         });
     }
@@ -186,11 +186,11 @@ async function computersPickHold(decname){
 
            document.querySelector("#computer").innerHTML += `<img src="${cards.image}" heigth="100" width="100"/>`;
           computerScore+=parseInt(decname);
-          console.log(cards.value);
+    //      console.log(cards.value);
           
         });
 
-        console.log(computerScore);
+        //console.log(computerScore);
     }
   }
 
