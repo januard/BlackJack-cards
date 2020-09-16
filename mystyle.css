@@ -1,0 +1,58 @@
+.player-deck,.computer-deck {
+	padding: 20px;
+}
+
+#holdbtn,
+#pickcards,#return {
+	display: none;
+}
+
+.bg-table  {
+	padding: 30px 0 30px 0; 
+	margin: 0 auto;
+	width: 50%;
+	background: url('istockphoto-1046326882-612x612.jpg') no-repeat;
+}
+
+.bg-table >table {
+	 margin: 0 auto;
+ }
+
+ .btn-functions,
+ .totalbethand,
+ #inputbet,
+ .holdbtn,
+ .pickcards,
+ .return,
+ .dealbtn
+  {
+	 display: flex;
+ }
+
+ .btn-functions{
+	 flex-direction: row;
+ }
+
+ .totalbethand,
+ .inputbetClass,
+ .holdbtnClass,
+ .pickcardsClass,
+ .returnClass,
+ .dealbtnClass{
+	 flex-direction: column;
+	 margin: 10px;
+ }
+ .btn-functions > div > button {
+    background: #d1c7d1;
+    border: none;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 4px;
+    padding-bottom: 5px;
+ }
+
+ * {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	
+ }
