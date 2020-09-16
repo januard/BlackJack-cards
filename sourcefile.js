@@ -15,6 +15,7 @@ let playerScore = 0;
 let showTubeCards =[]; 
 let GetpickCards = [];
 let win=0, lose=0, draw = 0;
+
       async function fetchQuote() {
         const rsp = await fetch(
           "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1"
