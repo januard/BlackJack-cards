@@ -14,7 +14,6 @@ let computerScore = 0;
 let playerScore = 0;
 let showTubeCards =[]; 
 let GetpickCards = [];
-<<<<<<< HEAD
 let win=0, lose=0, draw = 0;
       async function fetchQuote() {
         const rsp = await fetch(
