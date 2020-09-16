@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div class="bg-table">
+      <table border="1">
+        <tr>
+          <td colspan="2"> <div class="information-board" style="color: #eee"> Win or Lose</div></td>
+        </tr>
+        <tr>
+          <td><label id="playerhand" style="color: #8e96ff;">Player on hand: 0</label></td>
+          <td><label id="computerhand" style="color: #ff7676">Computer on hand: ?</label></td>
+        </tr>
+        <tr id="card-table">
+          <td>
+              <div class="player-deck">
+                <div class="player-hand"></div>
+                <div id="player"></div>
+             </div>
+          </td>
+          <td>
+            <div class="computer-deck">
+                  <div class="computer-hand"></div>
+                  <div id="computer"></div>
+                </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" >
+            <div class="btn-functions">
+              <div class="totalbethand" style="color: #aadcae;">Total Bet: $40,000</div>
+              <div class="inputbetClass"><input onkeypress="return CheckNumeric()" onkeyup="FormatCurrency(this)" name="" id="inputbet" min="1"></div>
+              <div class="dealbtnClass"><button id="dealbtn">deal</button></div>
+              <div class="holdbtnClass"><button id="holdbtn">hold</button></div>
+              <div class="pickcardsClass"><button id="pickcards">pick cards</button></div>
+              <div class="returnClass"><button id="return">Play Again</button></div>
+            </div>
+          </td>
+           
+        </tr>
+      </table>
+    </div>
+   
+
+   
+    
+
+   
+    <script src="sourcefile.js"></script>
+  </body>
+</html>
