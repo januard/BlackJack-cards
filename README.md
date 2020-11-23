@@ -1,3 +1,3 @@
 # BlackJack-cards
 You should Go to link
-http://porfolio.paulsoterana.xyz/BlackJack-cards/baraha.html
+https://januard.github.io/BlackJack-cards/baraha.html
